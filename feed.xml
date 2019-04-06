@@ -36,9 +36,9 @@
       <enclosure
         length="{{ episode.audio_length }}" 
         type="{{ episode.audio_type }}" 
-        url="{{ site.url }}{{ episode.audio_file }}"
+        url="{{ episode.audio_file }}"
       />
-      <guid>{{ site.url }}{{ episode.audio_file }}</guid>
+      <guid>{{ episode.audio_file }}</guid>
       <pubDate>{{ episode.release_date | date_to_rfc822}}</pubDate>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
