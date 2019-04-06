@@ -1,0 +1,48 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.podcast.title }}</title>
+    <link>{{ site.podcast.link }}</link>
+    <language>en-gb</language>
+    <copyright>&#169; 2019 NaCl Cast</copyright>
+    <itunes:author>BOAB</itunes:author>
+    <description>
+        {{ site.podcast.description }}
+    </description>
+    <itunes:type>serial</itunes:type>
+    <itunes:owner>
+      <itunes:name>Matt Bell</itunes:name>
+      <itunes:email>matt@mbell.me</itunes:email>
+    </itunes:owner>
+    <itunes:image
+      href="{{site.url}}/assets/img/cover.jpg"
+    />
+    <itunes:category text="Comedy">
+      <itunes:category text="Comedy"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    {% for episode in sites.episodes %}
+    <item>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>{{ episode.title }}</itunes:title>
+      <itunes:episode>{{ episode.episode }}</itunes:episode>
+      <itunes:season>{{ episode.season }}</itunes:season>
+      <title>{{ episode.title }}</title>
+      <description>
+        {{ episode.content }}
+      </description>
+      <enclosure
+        length="{{ episode.audio_length }}" 
+        type="{{ episode.audio_type }}" 
+        url="{{ site.url }}{{ episode.audio_file }}"
+      />
+      <guid>{{ site.url }}{{ episode.audio_file }}</guid>
+      <pubDate>{{ episode.release_date | date_to_rfc822}}</pubDate>
+      <itunes:duration>{{ episode.duration }}</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -13,22 +13,43 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: NaCl Podcast
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://nacl.bell.wtf" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: naclcast
+
+podcast:
+  title: NaCl
+  link: https://nacl.bell.wtf
+  description: |
+    Matt Bell and Abdul Ajetunmobi discuss the various gripes and groans they encounter
+    every day. Scott Street provides an alternative outlook on how insignificant their
+    bickering is. Produced by Harshpal Bhirth.
+
+collections:
+  episodes:
+    output: true
+    permalink: /episodes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-mentions
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
