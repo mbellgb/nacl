@@ -2,9 +2,9 @@
 layout: post
 ---
 
-<h3>Season {{season}}, episode {{episode}}</h3>
-<h1>{{ title }}</h1>
+<h3>Season {{ page.season }}, episode {{ page.episode }}</h3>
+<h1>{{ page.title }}</h1>
 
-<p>{{ description }}</p>
+<p>{{ page.description }}</p>
 
-<audio src="{{audio_file}}"></audio>
+<audio src="{{page.audio_file}}" autoplay="false"></audio>
