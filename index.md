@@ -3,7 +3,19 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: homepage
+title: NaCl
 ---
+
+## Latest Episodes
+
+{% assign episodes = site.episodes | sort: "release_date", "first" | reverse %}
+{% for e in episodes limit: 4%}
+<section class="episode">
+    <h3><a href="{{ e.url }}">{{ e.title }}</a></h3>
+    <p>Season {{ e.season }}, episode {{ e.episode }}</p>
+    <p>{{ e.description }}</p>
+</section>
+{% endfor %}
 
 ## Feed
 

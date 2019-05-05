@@ -39,6 +39,10 @@ defaults:
     values:
       layout: episode
 
+header_pages:
+  - about.md
+  - episodes.md
+
 # Build settings
 markdown: kramdown
 theme: minima

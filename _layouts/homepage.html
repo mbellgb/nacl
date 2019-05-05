@@ -3,15 +3,5 @@ layout: home
 ---
 
 <link type="application/rss+xml" rel="alternate" title="NaCl" href="/feed.xml"/>
+<link rel="stylesheet" href="/assets/custom.css">
 {{content}}
-
-<h2>Latest Episodes</h2>
-
-{% assign episodes = site.episodes | sort: "release_date", "first" | reverse %}
-{% for e in episodes limit: 4%}
-<section>
-    <h4>{{ e.title }}</h4>
-    <p>Season {{ e.season }}, episode {{ e.episode }}</p>
-    <p><a href="{{ e.url }}">Listen</a></p>
-</section>
-{% endfor %}

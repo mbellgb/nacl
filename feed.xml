@@ -31,7 +31,7 @@
       <itunes:season>{{ episode.season }}</itunes:season>
       <title>{{ episode.title }}</title>
       <description>
-        {{ episode.content }}
+        {{ episode.description }}
       </description>
       <enclosure
         length="{{ episode.audio_length }}" 
@@ -39,7 +39,7 @@
         url="{{ episode.audio_file }}"
       />
       <guid>{{ episode.audio_file }}</guid>
-      <pubDate>{{ episode.release_date | date_to_rfc822}}</pubDate>
+      <pubDate>{{ episode.date | date_to_rfc822}}</pubDate>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
       <itunes:explicit>yes</itunes:explicit>
     </item>
