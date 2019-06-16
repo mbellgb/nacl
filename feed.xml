@@ -23,7 +23,8 @@
       <itunes:category text="Comedy"/>
     </itunes:category>
     <itunes:explicit>yes</itunes:explicit>
-    {% for episode in site.episodes %}
+    {% assign episodes = site.episodes | sort:"date" %}
+    {% for episode in episodes  %}
     <item>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:title>{{ episode.title }}</itunes:title>
@@ -38,7 +39,7 @@
         type="{{ episode.audio_type }}" 
         url="{{ episode.audio_file }}"
       />
-      <guid>{{ episode.audio_file }}</guid>
+      <guid>{{ episode.guid }}</guid>
       <pubDate>{{ episode.date | date_to_rfc822}}</pubDate>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
       <itunes:explicit>yes</itunes:explicit>
