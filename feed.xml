@@ -23,7 +23,8 @@
       <itunes:category text="Comedy"/>
     </itunes:category>
     <itunes:explicit>yes</itunes:explicit>
-    {% for episode in site.episodes | sort:"date" %}
+    {% assign episodes = site.episodes | sort:"date" %}
+    {% for episode in episodes  %}
     <item>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:title>{{ episode.title }}</itunes:title>

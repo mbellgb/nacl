@@ -1,6 +1,6 @@
 ---
 title: "Tipping"
-date: 2019-06-16:16:00:00Z
+date: 2019-06-16T15:00:00Z
 audio_file: https://storage.googleapis.com/static.nacl.bell.wtf/episodes/2-tipping.m4a
 audio_type: audio/x-m4a
 audio_length: 39168
