@@ -24,11 +24,12 @@ Don't edit this.
 - [ ] Episode proposal accepted
 - [ ] Episode content agreed
 - [ ] Guests agreed
-- [ ] Recording time/date/location set (yyyy/mm/dd)
+- [ ] Recording time/date/location set (`yyyy/mm/dd`)
 - [ ] Episode recorded
 - [ ] Files sent to producer
 - [ ] Episode mixed
 - [ ] Release date agreed
+- [ ] Season/episode numbered (season: `x`, episode: `y`)
 - [ ] Audio file uploaded to Google Cloud
-- [ ] Episode data file pushed to Git with a PR (link)
+- [ ] Episode data file pushed to Git with a PR (`link`)
 - [ ] Episode merged into master
