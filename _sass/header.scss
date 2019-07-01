@@ -1,0 +1,11 @@
+header {
+  background-color: $black;
+  color: $white;
+  padding: $body-padding;
+  overflow: auto;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}

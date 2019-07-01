@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "ApM";
+    src: url("/assets/fonts/AMono.ttf");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Ap";
+    src: url("/assets/fonts/A.otf");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Ap";
+    src: url("/assets/fonts/ALight.otf");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Ap";
+    src: url("/assets/fonts/ABold.otf");
+    font-weight: 700;
+  }
+
+  $font-heading: "Ap", Arial, Helvetica, sans-serif;
+  $font-body: "Ap", Arial, Helvetica, sans-serif;
+  $font-mono: "ApM", monospace;
+
+  * {
+    font-family: $font-body;
+  }

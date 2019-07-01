@@ -1,13 +1,17 @@
 ---
-layout: post
+layout: default
 ---
 
-<h3>Season {{ page.season }}, episode {{ page.episode }}</h3>
+{% capture subtitle %}Season {{ page.season }}, Episode {{ page.episode }}{% endcapture %}
+{% assign title = page.title %}
+{% include header.html title=title subtitle=subtitle %}
+<content>
 
-<p><i>{{ page.description }}</i></p>
+    <p><i>{{ page.description }}</i></p>
 
-<audio autoplay="false" controls>
-    <source src="{{ page.audio_file }}" type="{{ page.audio_type }}">
-</audio>
+    <audio controls>
+        <source src="{{ page.audio_file }}" type="{{ page.audio_type }}">
+    </audio>
 
-{{ content }}
+    {{ content }}
+</content>

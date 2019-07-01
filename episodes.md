@@ -2,6 +2,7 @@
 layout: page
 permalink: /episodes/
 title: Episodes
+navigation: true
 ---
 
 <link rel="stylesheet" href="/assets/custom.css">
