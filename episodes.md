@@ -5,8 +5,6 @@ title: Episodes
 navigation: true
 ---
 
-<link rel="stylesheet" href="/assets/custom.css">
-
 {% assign episodes = site.episodes | sort: "release_date", "first" | reverse %}
 {% for e in episodes %}
 <section class="episode">
