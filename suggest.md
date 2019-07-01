@@ -1,5 +1,6 @@
 ---
 title: Suggestions
+permalink: /suggest/
 subtitle: What's your gripe?
 navigation: true
 layout: page
