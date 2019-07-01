@@ -1,7 +1,10 @@
 ---
-layout: home
+layout: default
 ---
 
-<link type="application/rss+xml" rel="alternate" title="NaCl" href="/feed.xml"/>
-<link rel="stylesheet" href="/assets/custom.css">
-{{content}}
+<link type="application/rss+xml" rel="alternate" title="NaCl" href="/feed.xml" />
+{% assign title="What's your gripe?" %}
+{% include header.html title=title %}
+<content>
+    {{content}}
+</content>

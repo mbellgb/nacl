@@ -1,0 +1,20 @@
+{% assign pages = site.pages %}
+{% for redirect in site.redirects %}
+{% assign pages = pages | push: redirect %}
+{% endfor %}
+
+{% assign sorted_pages = pages | where: "navigation",true | sort: "order" %}
+<nav class="closed">
+    <a class="logotype" href="{{site.baseurl}}/">NaCl</a>
+    <span aria-hidden="true" class="menu-button">Menu</span>
+    {% for p in sorted_pages %}
+    {% if p.title %}
+    {% assign classes = '' %}
+    {% if page.url == p.url %}
+    {% assign classes = classes | append: 'current' %}
+    {% endif %}
+    <a class="{{ classes }}"
+        href="{{ p.url | replace:'index.html','' | prepend: site.baseurl }}">{{ p.title | to_lower }}</a>
+    {% endif %}
+    {% endfor %}
+</nav>
