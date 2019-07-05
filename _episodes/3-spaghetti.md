@@ -12,4 +12,6 @@ description: Guest Hugh Rawlinson joins us to discuss his gripes about Italian s
 guid: nacl/0d764256-9eaa-11e9-8337-876cf44478f3
 ---
 
-Hugh can be found on Twitter as [@JCheesemonger](https://twitter.com/JCheesemonger), or [@HughRawlinson](https://twitter.com/hughrawlinson).
+Hugh can be found on Twitter as
+[@JCheesemonger](https://twitter.com/JCheesemonger), or
+[@HughRawlinson](https://twitter.com/hughrawlinson).
