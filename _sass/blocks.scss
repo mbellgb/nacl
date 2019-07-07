@@ -1,0 +1,26 @@
+.episode {
+  box-shadow: rgba($black, 0.1) 0px 5px 10px;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem 0.25rem;
+  margin: 1rem 0;
+
+  h3 {
+    background-color: $black;
+    color: $white;
+    margin: -0.5rem -0.5rem;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+
+    a {
+      color: $white;
+    }
+  }
+
+  h4 {
+    background-color: $black;
+    color: $white;
+    margin: 0 -0.5rem;
+    padding: 0.5rem 0.5rem 0.25rem;
+  }
+}

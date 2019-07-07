@@ -1,7 +1,6 @@
 ---
 title: "Spaghetti"
-# fix date
-date: 2019-07-04T15:00:00Z
+date: 2019-07-08T18:00:00Z
 audio_file: <tbc>
 audio_type: audio/x-m4a
 audio_length: <tbc>
