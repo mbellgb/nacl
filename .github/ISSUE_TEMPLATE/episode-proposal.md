@@ -3,7 +3,7 @@ name: Episode proposal
 about: Propose and track creation of a NaCl episode
 title: "[1-3 word episode title]"
 labels: Episode idea
-assignees: mbellgb, abdulajet
+assignees: mbellgb
 
 ---
 
