@@ -17,7 +17,7 @@
       <itunes:email>matt@mbell.me</itunes:email>
     </itunes:owner>
     <itunes:image
-      href="{{site.url}}/assets/img/cover.jpg"
+      href="{{site.url}}/assets/img/podcast-cover.jpg"
     />
     <itunes:category text="Comedy">
       <itunes:category text="Comedy"/>
