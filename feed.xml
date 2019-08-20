@@ -57,8 +57,8 @@
       <googleplay:duration>{{ episode.duration }}</googleplay:duration>
       <itunes:explicit>yes</itunes:explicit>
       <googleplay:explicit>yes</googleplay:explicit>
-    <itunes:author>{{ site.podcast.author }}</itunes:author>
-    <googleplay:author>{{ site.podcast.author }}</googleplay:author>
+      <itunes:author>{{ site.podcast.author }}</itunes:author>
+      <googleplay:author>{{ site.podcast.author }}</googleplay:author>
     </item>
     {% endfor %}
   </channel>
