@@ -7,8 +7,7 @@ audio_length: 42144
 duration: 650
 season: 1
 episode: 5
-description: Abdul and Matt are joined by Joe to lament the unique variety of
-shower controls.
+description: Abdul and Matt are joined by Joe to lament the unique variety of shower controls.
 guid: nacl/958cdcd2-d734-11e9-ab26-f7c446bbc78d
 ---
 
