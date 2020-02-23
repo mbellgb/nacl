@@ -1,5 +1,5 @@
 ---
-title: "Buses"
+title: "Talking On Buses"
 date: 2020-02-24T20:00:00Z
 audio_file:
 audio_type: audio/x-m4a
@@ -16,3 +16,4 @@ What's so annoying about people on the bus? Quite a lot apparently. Recorded
 live on location at Travelodge Moor Street.
 
 This episode also features the return of Scott's choice opinions on the matter.
+Despite technical issues.
