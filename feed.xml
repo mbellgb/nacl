@@ -1,28 +1,40 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
   <channel>
     <title>{{ site.podcast.title }}</title>
     <link>{{ site.podcast.link }}</link>
     <language>en-gb</language>
     <copyright>&#169; 2019 NaCl Cast</copyright>
-    <itunes:author>BOAB</itunes:author>
+
+    <itunes:author>{{ site.podcast.author }}</itunes:author>
+    <googleplay:author>{{ site.podcast.author }}</googleplay:author>
+
     <description>
         {{ site.podcast.description }}
     </description>
+
     <itunes:type>serial</itunes:type>
     <itunes:owner>
-      <itunes:name>Matt Bell</itunes:name>
-      <itunes:email>matt@mbell.me</itunes:email>
+      <itunes:name>{{ site.podcast.owner.name }}</itunes:name>
+      <itunes:email>{{ site.podcast.owner.email }}</itunes:email>
     </itunes:owner>
+
     <itunes:image
       href="{{site.url}}/assets/img/podcast-cover.jpg"
     />
-    <itunes:category text="Comedy">
-      <itunes:category text="Comedy"/>
-    </itunes:category>
+    <googleplay:image
+      href="{{site.url}}/assets/img/podcast-cover.jpg"
+    />
+
+    <itunes:category text="{{ site.podcast.category }}" />
+    <googleplay:category text="{{ site.podcast.category }}" />
+
     <itunes:explicit>yes</itunes:explicit>
+    <googleplay:explicit>yes</itunes:explicit>
+
     {% assign episodes = site.episodes | sort:"date" %}
     {% for episode in episodes  %}
     <item>
@@ -42,7 +54,11 @@
       <guid>{{ episode.guid }}</guid>
       <pubDate>{{ episode.date | date_to_rfc822}}</pubDate>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
+      <googleplay:duration>{{ episode.duration }}</googleplay:duration>
       <itunes:explicit>yes</itunes:explicit>
+      <googleplay:explicit>yes</googleplay:explicit>
+      <itunes:author>{{ site.podcast.author }}</itunes:author>
+      <googleplay:author>{{ site.podcast.author }}</googleplay:author>
     </item>
     {% endfor %}
   </channel>

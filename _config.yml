@@ -26,6 +26,11 @@ podcast:
   title: NaCl
   link: https://nacl.bell.wtf
   description: *description
+  author: BOAB
+  owner:
+    name: Matt Bell
+    email: matt@mbell.me
+  category: Comedy
 
 collections:
   episodes:
