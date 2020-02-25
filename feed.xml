@@ -33,7 +33,7 @@
     <googleplay:category text="{{ site.podcast.category }}" />
 
     <itunes:explicit>yes</itunes:explicit>
-    <googleplay:explicit>yes</itunes:explicit>
+    <googleplay:explicit>yes</googleplay:explicit>
 
     {% assign episodes = site.episodes | sort:"date" %}
     {% for episode in episodes  %}
