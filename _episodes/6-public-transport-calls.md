@@ -17,4 +17,4 @@ apparently. Recorded live on location at a Travelodge in Birmingham, which
 probably warrants an episode of its own.
 
 This episode also features the return of Scott's choice opinions on the matter.
-Despite technical issues.
+Despite technical issues. Pardon his rudeness.
