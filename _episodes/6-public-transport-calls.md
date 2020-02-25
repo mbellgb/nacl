@@ -1,9 +1,9 @@
 ---
 title: "Public Transport Calls"
-date: 2020-02-24T20:00:00Z
-audio_file:
+date: 2020-02-25T12:00:00Z
+audio_file: https://storage.googleapis.com/static.nacl.bell.wtf/episodes/6-public-transport-calls.m4a
 audio_type: audio/x-m4a
-audio_length: 
+audio_length: 37640
 duration: 567
 season: 1
 episode: 6
