@@ -1,6 +1,6 @@
 ---
 title: "Spice"
-date: 2020-03-29T20:00:00Z
+date: 2020-03-29T16:00:00Z
 audio_file: https://storage.googleapis.com/static.nacl.bell.wtf/episodes/7-spice.m4a
 audio_type: audio/x-m4a
 audio_length: 33716
