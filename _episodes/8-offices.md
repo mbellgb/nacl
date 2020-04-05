@@ -3,8 +3,8 @@ title: "Offices"
 date: 2020-04-05T18:00:00+01:00
 audio_file: https://storage.googleapis.com/static.nacl.bell.wtf/episodes/8-offices.m4a
 audio_type: audio/x-m4a
-audio_length: 
-duration: 
+audio_length: 38744
+duration: 652
 season: 1
 episode: 8
 description: "Reminiscing about office gripes"
